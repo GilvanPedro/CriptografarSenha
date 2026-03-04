@@ -27,6 +27,8 @@ classDiagram
     }
 
     class Criptografia {
+        -String senha
+        -String hash
         +String criptografarSenha(String senha)
         +boolean descriptografarSenha(String senha, String hash)
     }
